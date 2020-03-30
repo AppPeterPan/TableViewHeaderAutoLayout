@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		9B3B92192431A358004A1838 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3B92182431A358004A1838 /* AppDelegate.swift */; };
 		9B3B921B2431A358004A1838 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3B921A2431A358004A1838 /* SceneDelegate.swift */; };
-		9B3B921D2431A358004A1838 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3B921C2431A358004A1838 /* ViewController.swift */; };
 		9B3B92202431A358004A1838 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B3B921E2431A358004A1838 /* Main.storyboard */; };
 		9B3B92222431A35C004A1838 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B3B92212431A35C004A1838 /* Assets.xcassets */; };
 		9B3B92252431A35C004A1838 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B3B92232431A35C004A1838 /* LaunchScreen.storyboard */; };
+		9B3B922F2431AAA8004A1838 /* AlbumTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3B922E2431AAA8004A1838 /* AlbumTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9B3B92152431A358004A1838 /* Demo2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B3B92152431A358004A1838 /* TableViewHeaderAutoLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewHeaderAutoLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B3B92182431A358004A1838 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B3B921A2431A358004A1838 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9B3B921C2431A358004A1838 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9B3B921F2431A358004A1838 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9B3B92212431A35C004A1838 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B3B92242431A35C004A1838 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B3B92262431A35C004A1838 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B3B922E2431AAA8004A1838 /* AlbumTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +48,7 @@
 		9B3B92162431A358004A1838 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9B3B92152431A358004A1838 /* Demo2.app */,
+				9B3B92152431A358004A1838 /* TableViewHeaderAutoLayout.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,8 +58,8 @@
 			children = (
 				9B3B92182431A358004A1838 /* AppDelegate.swift */,
 				9B3B921A2431A358004A1838 /* SceneDelegate.swift */,
-				9B3B921C2431A358004A1838 /* ViewController.swift */,
 				9B3B921E2431A358004A1838 /* Main.storyboard */,
+				9B3B922E2431AAA8004A1838 /* AlbumTableViewController.swift */,
 				9B3B92212431A35C004A1838 /* Assets.xcassets */,
 				9B3B92232431A35C004A1838 /* LaunchScreen.storyboard */,
 				9B3B92262431A35C004A1838 /* Info.plist */,
@@ -70,9 +70,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9B3B92142431A358004A1838 /* Demo2 */ = {
+		9B3B92142431A358004A1838 /* TableViewHeaderAutoLayout */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9B3B92292431A35C004A1838 /* Build configuration list for PBXNativeTarget "Demo2" */;
+			buildConfigurationList = 9B3B92292431A35C004A1838 /* Build configuration list for PBXNativeTarget "TableViewHeaderAutoLayout" */;
 			buildPhases = (
 				9B3B92112431A358004A1838 /* Sources */,
 				9B3B92122431A358004A1838 /* Frameworks */,
@@ -82,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = Demo2;
+			name = TableViewHeaderAutoLayout;
 			productName = Demo2;
-			productReference = 9B3B92152431A358004A1838 /* Demo2.app */;
+			productReference = 9B3B92152431A358004A1838 /* TableViewHeaderAutoLayout.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +102,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9B3B92102431A358004A1838 /* Build configuration list for PBXProject "Demo2" */;
+			buildConfigurationList = 9B3B92102431A358004A1838 /* Build configuration list for PBXProject "TableViewHeaderAutoLayout" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +115,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9B3B92142431A358004A1838 /* Demo2 */,
+				9B3B92142431A358004A1838 /* TableViewHeaderAutoLayout */,
 			);
 		};
 /* End PBXProject section */
@@ -138,8 +138,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B3B921D2431A358004A1838 /* ViewController.swift in Sources */,
 				9B3B92192431A358004A1838 /* AppDelegate.swift in Sources */,
+				9B3B922F2431AAA8004A1838 /* AlbumTableViewController.swift in Sources */,
 				9B3B921B2431A358004A1838 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,7 +317,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9B3B92102431A358004A1838 /* Build configuration list for PBXProject "Demo2" */ = {
+		9B3B92102431A358004A1838 /* Build configuration list for PBXProject "TableViewHeaderAutoLayout" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9B3B92272431A35C004A1838 /* Debug */,
@@ -326,7 +326,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9B3B92292431A35C004A1838 /* Build configuration list for PBXNativeTarget "Demo2" */ = {
+		9B3B92292431A35C004A1838 /* Build configuration list for PBXNativeTarget "TableViewHeaderAutoLayout" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9B3B922A2431A35C004A1838 /* Debug */,

@@ -1,24 +1,173 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1Qb-5W-wOa">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Album Table View Controller-->
+        <scene sceneID="iIk-3l-T2Y">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <tableViewController id="gqG-xA-pOi" customClass="AlbumTableViewController" customModule="Demo2" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Cqm-Dh-Rtx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="4Om-lo-CtO">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="177"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qzu-si-kec">
+                                    <rect key="frame" x="30" y="10" width="354" height="157"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="rsS-2U-wLM">
+                                            <rect key="frame" x="0.0" y="0.0" width="354" height="125"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="goodbye prince" translatesAutoresizingMaskIntoConstraints="NO" id="bWW-3H-UbD">
+                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="100" id="IAp-Ma-g6S"/>
+                                                        <constraint firstAttribute="width" constant="100" id="xyd-O0-AwN"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="OTN-tc-mRe">
+                                                    <rect key="frame" x="120" y="0.0" width="234" height="125"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="再見王子" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lNC-GD-j9e">
+                                                            <rect key="frame" x="0.0" y="0.0" width="234" height="18.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IJ1-8k-kq4">
+                                                            <rect key="frame" x="0.0" y="23.5" width="234" height="101.5"/>
+                                                            <string key="text">再見吧我的王子 守護愛情的樣子
+讓回憶紀念最初感動的真實
+滿口永遠的孩子 慢慢懂事
+用眼淚灌溉會幸福的種子</string>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="zmC-aC-2ZR">
+                                            <rect key="frame" x="0.0" y="135" width="354" height="22"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g32-6O-y9Q">
+                                                    <rect key="frame" x="0.0" y="0.0" width="167" height="22"/>
+                                                    <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="tintColor" red="0.94980257749999997" green="0.30823418499999999" blue="0.39601957799999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    <state key="normal" title="Play" image="play.fill" catalog="system">
+                                                        <color key="titleColor" red="0.94980257749999997" green="0.30823418499999999" blue="0.39601957799999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </state>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a0h-Mv-vx4">
+                                                    <rect key="frame" x="187" y="0.0" width="167" height="22"/>
+                                                    <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="tintColor" red="0.94980257749999997" green="0.30823418499999999" blue="0.39601957799999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    <state key="normal" title="Shuffle" image="shuffle" catalog="system">
+                                                        <color key="titleColor" red="0.94980257749999997" green="0.30823418499999999" blue="0.39601957799999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstItem="qzu-si-kec" firstAttribute="leading" secondItem="4Om-lo-CtO" secondAttribute="leading" constant="30" id="5eo-ly-QrB"/>
+                                <constraint firstAttribute="bottom" secondItem="qzu-si-kec" secondAttribute="bottom" constant="10" id="IOL-6I-pgI"/>
+                                <constraint firstAttribute="trailing" secondItem="qzu-si-kec" secondAttribute="trailing" constant="30" id="g82-31-YU6"/>
+                                <constraint firstItem="qzu-si-kec" firstAttribute="top" secondItem="4Om-lo-CtO" secondAttribute="top" constant="10" id="nEg-9o-wL7"/>
+                            </constraints>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="Gvj-ia-KFP">
+                                <rect key="frame" x="0.0" y="205" width="414" height="63"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Gvj-ia-KFP" id="h4Q-tM-byf">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="63"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="4Rt-cj-lOa">
+                                            <rect key="frame" x="20" y="21" width="105.5" height="21"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1hb-de-Lew">
+                                                    <rect key="frame" x="0.0" y="0.0" width="8" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="再見王子" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7wl-do-qFY">
+                                                    <rect key="frame" x="36" y="0.0" width="69.5" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="218-pR-ZT3">
+                                            <rect key="frame" x="376" y="20.5" width="18" height="22"/>
+                                            <color key="tintColor" red="0.94980257749999997" green="0.30823418499999999" blue="0.39601957799999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <state key="normal" image="plus" catalog="system"/>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="4Rt-cj-lOa" firstAttribute="leading" secondItem="h4Q-tM-byf" secondAttribute="leading" constant="20" id="Mqk-J2-Ajr"/>
+                                        <constraint firstItem="218-pR-ZT3" firstAttribute="centerY" secondItem="h4Q-tM-byf" secondAttribute="centerY" id="Skh-yr-aBL"/>
+                                        <constraint firstItem="4Rt-cj-lOa" firstAttribute="top" secondItem="h4Q-tM-byf" secondAttribute="topMargin" constant="10" id="Yhr-EB-2o3"/>
+                                        <constraint firstItem="4Rt-cj-lOa" firstAttribute="centerY" secondItem="h4Q-tM-byf" secondAttribute="centerY" id="hTJ-Df-XZn"/>
+                                        <constraint firstAttribute="trailing" secondItem="218-pR-ZT3" secondAttribute="trailing" constant="20" id="o1R-za-vR5"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="gqG-xA-pOi" id="QwH-6o-ELP"/>
+                            <outlet property="delegate" destination="gqG-xA-pOi" id="1Ol-CQ-qVx"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Itb-xV-KCD"/>
+                    <connections>
+                        <outlet property="albumImageView" destination="bWW-3H-UbD" id="k4E-H8-4mK"/>
+                        <outlet property="albumNameLabel" destination="lNC-GD-j9e" id="1XW-f4-DXA"/>
+                        <outlet property="lyricsLabel" destination="IJ1-8k-kq4" id="Agy-la-f4C"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bay-D4-Qg2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1904.3478260869567" y="142.63392857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="TFD-ic-na6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1Qb-5W-wOa" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DoE-ye-RhC">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gqG-xA-pOi" kind="relationship" relationship="rootViewController" id="nDt-PV-MBV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="97w-7j-vip" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="994.20289855072474" y="142.63392857142856"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="goodbye prince" width="334" height="332"/>
+        <image name="play.fill" catalog="system" width="116" height="128"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <image name="shuffle" catalog="system" width="128" height="93"/>
+    </resources>
 </document>
